@@ -6,6 +6,8 @@ See working example here: https://vizzuhq.github.io/vizzu-pyscript-example/
 
 See full source code here: https://github.com/vizzuhq/vizzu-pyscript-example/blob/main/docs/index.html
 
+![Example chart](https://vizzuhq.github.io/vizzu-lib-doc/readme/example.gif)
+
 ## Import map
 
 We should set the vizzu library URL in our HTML file using an import map. 
