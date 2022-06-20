@@ -8,7 +8,9 @@ See full source code here: https://github.com/vizzuhq/vizzu-pyscript-example/blo
 
 ![Example chart](https://vizzuhq.github.io/vizzu-lib-doc/readme/example.gif)
 
-## Import map
+## HTML
+
+### Import map
 
 We should set the vizzu library URL in our HTML file using an import map. 
 
@@ -22,7 +24,7 @@ We should set the vizzu library URL in our HTML file using an import map.
 </script>
 ```
 
-## Container HTML element
+### Container HTML element
 
 We create an HTML element for containing the chart:
 
