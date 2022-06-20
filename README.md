@@ -33,7 +33,7 @@ We create an HTML element for containing the chart:
 ```
 ## PyScript 
 
-We add a new `<py-script>` to our HTML file for our PyScript code:
+We add a new `<py-script>` tag to our HTML file for our PyScript code:
 
 ```html
 <py-script>
