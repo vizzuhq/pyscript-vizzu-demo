@@ -63,7 +63,7 @@ chart = Vizzu.default.new("myVizzu")
 ### Creating a chart
 
 Here we pass the data and the chart configuration object to Vizzu. For further info on how to use Vizzu see
-(Vizzu tutorial)[https://lib.vizzuhq.com/latest/]. Note, that we have to convert the Python dictionary into JS object
+the (tutorial)[https://lib.vizzuhq.com/latest/]. Note, that we have to convert the Python dictionary into JS object
 manually, since auto conversion won't work, because it would create JS maps instead of JS objects. We also have 
 to set for `to_js` that it should create JS objects passing a converter in the second parameter.
 
