@@ -1,10 +1,10 @@
 # How to use Vizzu charts in PyScript
 
-This howto describes the steps to use [Vizzu](https://github.com/vizzuhq/vizzu-lib) JavaScript charting library in [PyScript](https://pyscript.net/).
+This how-to describes the steps to use the [Vizzu](https://github.com/vizzuhq/vizzu-lib) JavaScript charting library in [PyScript](https://pyscript.net/).
 
-See working example here: https://vizzuhq.github.io/vizzu-pyscript-example/
+Working example: https://vizzuhq.github.io/vizzu-pyscript-example/.
 
-See full source code here: https://github.com/vizzuhq/vizzu-pyscript-example/blob/main/docs/index.html
+Source code: https://github.com/vizzuhq/vizzu-pyscript-example/blob/main/docs/index.html
 
 ![Example chart](https://vizzuhq.github.io/vizzu-lib-doc/readme/example.gif)
 
@@ -12,7 +12,7 @@ See full source code here: https://github.com/vizzuhq/vizzu-pyscript-example/blo
 
 ### Import map
 
-We should set the vizzu library URL in our HTML file using an import map. 
+Vizzu library's URL should be set in the HTML file using an import map.
 
 ```html
 <script type="importmap">
@@ -26,14 +26,14 @@ We should set the vizzu library URL in our HTML file using an import map.
 
 ### Container HTML element
 
-We create an HTML element for containing the chart:
+Create an HTML element for the chart:
 
 ```html
 <div id="myVizzu" style="width:500px; height:350px;"></div>
 ```
 ## PyScript 
 
-We add a new `<py-script>` tag to our HTML file for our PyScript code:
+Add a new `<py-script>` tag to the HTML file for the PyScript code:
 
 ```html
 <py-script>
@@ -43,8 +43,7 @@ We add a new `<py-script>` tag to our HTML file for our PyScript code:
 
 ### Importing dependencies
 
-We import the Vizzu library into our PyScript source. We will also need `to_js` from `pyodide` and 
-`Object` from `js` to convert our Python dictionaries into JavaScript objects. 
+The Vizzu library has to be imported into the PyScript source. `to_js` from `pyodide` and `Object` from `js` are also required to convert the Python dictionaries into JavaScript objects. 
 
 ```Python
 from pyodide import to_js
@@ -54,7 +53,7 @@ import Vizzu
 
 ### Initializing Vizzu
 
-We can create a new Vizzu object passing the container HTML element's id to it's constructor.
+A new Vizzu object is created by passing the container HTML element's id to its constructor.
 
 ```Python
 chart = Vizzu.default.new("myVizzu")
@@ -62,10 +61,9 @@ chart = Vizzu.default.new("myVizzu")
 
 ### Creating a chart
 
-Here we pass the data and the chart configuration object to Vizzu. For further info on how to use Vizzu see
-the [tutorial](https://lib.vizzuhq.com/latest/). Note, that we have to convert the Python dictionary into JS object
-manually, since auto conversion won't work, because it would create JS maps instead of JS objects. We also have 
-to set for `to_js` that it should create JS objects passing a converter in the second parameter.
+In the following example, the data and the chart configuration object are passed to Vizzu. For further info on using Vizzu, check 
+the [tutorial](https://lib.vizzuhq.com/latest/#chapter-0.0). 
+Please note that the Python dictionary has to be manually converted into a JS object, as the auto conversion doesn't work because it would create JS maps instead of JS objects. `to_js` also needs to be set in a way that it creates JS objects, by passing a converter in the second parameter.
 
 ```Python
 chart.animate(to_js({
@@ -83,9 +81,9 @@ chart.animate(to_js({
 }, dict_converter=Object.fromEntries))
 ```
 
-### Modifying the chart
+### Animating the chart
 
-From this point we can repeat the `animate` calls and transform our chart.
+From this point, repeatedly calling the `animate` method will transform the chart. We suggest that you check the [tutorial](https://lib.vizzuhq.com/latest/#chapter-0.0) and the [examples](https://lib.vizzuhq.com/latest/#animated-charts) to get a sense of how to build animated charts and data stories with Vizzu.
 
 ```Python
 chart.animate(to_js({
@@ -95,4 +93,4 @@ chart.animate(to_js({
 }, dict_converter=Object.fromEntries))
 ```
 
-
+#### Have fun animating charts with Vizzu and PyScript and let us know if you build something cool with them. 😊📈🚀 
