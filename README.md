@@ -93,4 +93,4 @@ chart.animate(to_js({
 }, dict_converter=Object.fromEntries))
 ```
 
-#### Have fun animating charts with Vizzu and PyScript and let us know if you build something cool with them. 😊📈🚀 
+**Have fun animating charts with Vizzu and PyScript and let us know if you build something cool with them. 😊📈🚀**
