@@ -10,17 +10,13 @@ Source code: https://github.com/vizzuhq/vizzu-pyscript-example/blob/main/docs/in
 
 ## HTML
 
-### Import map
+### Loading the Vizzu library
 
-Vizzu library's URL should be set in the HTML file using an import map.
+Vizzu library should be loaded first:
 
 ```html
-<script type="importmap">
-  {
-    "imports": {
-      "Vizzu": "https://cdn.jsdelivr.net/npm/vizzu@latest/dist/vizzu.min.js"
-    }
-  }
+<script>
+	(async () => { Vizzu = await import('https://cdn.jsdelivr.net/npm/vizzu@latest/dist/vizzu.min.js') })()
 </script>
 ```
 
@@ -46,9 +42,9 @@ Add a new `<py-script>` tag to the HTML file for the PyScript code:
 The Vizzu library has to be imported into the PyScript source. `to_js` from `pyodide` and `Object` from `js` are also required to convert the Python dictionaries into JavaScript objects. 
 
 ```Python
-from pyodide import to_js
+from pyodide.ffi import create_proxy, to_js
+from js import Vizzu
 from js import Object
-import Vizzu
 ```
 
 ### Initializing Vizzu
