@@ -79,7 +79,7 @@ chart.animate(to_js({
 
 ### Animating the chart
 
-From this point, repeatedly calling the `animate` method will transform the chart. We suggest that you check the [tutorial](https://lib.vizzuhq.com/latest/#chapter-0.0) and the [examples](https://lib.vizzuhq.com/latest/#animated-charts) to get a sense of how to build animated charts and data stories with Vizzu.
+From this point, repeatedly calling the `animate` method will transform the chart. We suggest that you check the [tutorial](https://lib.vizzuhq.com/latest/tutorial/) and the [examples](https://lib.vizzuhq.com/latest/examples/) to get a sense of how to build animated charts and data stories with Vizzu.
 
 ```Python
 chart.animate(to_js({
