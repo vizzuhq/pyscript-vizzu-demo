@@ -2,9 +2,9 @@
 
 This how-to describes the steps to use the [Vizzu](https://github.com/vizzuhq/vizzu-lib) JavaScript charting library in [PyScript](https://pyscript.net/).
 
-Working example: https://vizzuhq.github.io/vizzu-pyscript-example/.
+Working example: https://vizzuhq.github.io/pyscript-vizzu-demo/.
 
-Source code: https://github.com/vizzuhq/vizzu-pyscript-example/blob/main/docs/index.html
+Source code: https://github.com/vizzuhq/pyscript-vizzu-demo/blob/main/docs/index.html
 
 ![Example chart](https://vizzuhq.github.io/vizzu-lib-doc/readme/example.gif)
 
